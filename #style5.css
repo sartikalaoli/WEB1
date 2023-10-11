@@ -6,6 +6,8 @@
 }
 #header {
     background-color: lightgreen;
+    text-align: center;
+    padding: 20px;
 }
 #sidebar{
     float: left;
