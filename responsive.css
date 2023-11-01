@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #cdcdcd;
+    text-align: center;
+    padding: 40px;
+}
+
+footer {
+    background-color: #565656;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+main img{
+    width: 100%;
+}
+
+@media( max-width: 576px) {
+    main {
+        flex-direction: column;
+    }
+    header h1{
+        color: red;
+    }
+}
