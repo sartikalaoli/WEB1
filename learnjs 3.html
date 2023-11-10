@@ -12,15 +12,25 @@
     <script>
         //Create an object named student with this properties;
         //nam, NIM, major, religion, address(fill these with your info)
-
+        const student ={
+            name: "Sartika laoli",
+            NIM: "2282038",
+            Major: "Sistem informasi",
+            Religion:"Advent",
+            Address:" Unai",
+        }
         
     </script>
 
     <!--Display the date/value below: -->
-    <p>Name: ...</p>
-    <p>NIM: ...</p>
-    <P>Major: ...</P>
-    <p>Religion: ...</p>
-    <p>Address: ...</p>
+    <p> Name: <script>document.write(student.name)</script> </p>
+    <p>NIM: <span id="nim"></span></p>
+    <P>Major:<script>document.write(student.Major)</script></P>
+    <p>Religion:<script>document.write(student.Religion)</script></p>
+    <p>Address:<script>document.write(student.Address)</script></p>
+
+    <script>
+        document.getElementById("nim").innerHTML = student.NIM;
+    </script>
 </body>
 </html>
