@@ -14,11 +14,11 @@
     <button onmouseover="functionHover()">Hover over me..</button>
 
     <!--onmouseout-->
-    <button onmouseout="functionOut()">Out me!</button>
+    <button onmouseout="functionOut()">>Hover over me!</button>
 
+    <br></br>
     <!--onkeydown-->
-    <button onkeydown="functionDown()">down me..</button>
-
+    Name: <input type="text" id="name" onkeydown="functionKeyDown()">
     <!--onload-->
     <button onload="functionLoad()">load me..</button>
 
@@ -31,18 +31,10 @@
             console.log("Hi,you hover over the button");
         }
 
-        functionDown() {
-            console.log("Hi,you down the button");
+        function functionKeyDown() {
+            console.log("You pressed a key");
+            document.getElementById("name").style.borderColor = "red";
         }
-
-        functionOut() {
-            console.log("Hi,you out the button");
-        }
-
-        functionLoad() {
-            console.log("Hi,you load the button")
-        }
-
     </script>
 </body>
 </html>
