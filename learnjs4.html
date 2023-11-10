@@ -7,10 +7,20 @@
 </head>
 <body>
     <h1>Learn JS 4</h1>
-
+    <!--onclick event-->
     <button onclick="functionClick()">Click me!</button>
 
-    <button onmouseover="functionHover()">Hover over me...</button>
+    <!--onmouseover-->
+    <button onmouseover="functionHover()">Hover over me..</button>
+
+    <!--onmouseout-->
+    <button onmouseout="functionOut()">Out me!</button>
+
+    <!--onkeydown-->
+    <button onkeydown="functionDown()">down me..</button>
+
+    <!--onload-->
+    <button onload="functionLoad()">load me..</button>
 
     <script>
         function functionClick() {
@@ -20,6 +30,19 @@
         functionHover() {
             console.log("Hi,you hover over the button");
         }
+
+        functionDown() {
+            console.log("Hi,you down the button");
+        }
+
+        functionOut() {
+            console.log("Hi,you out the button");
+        }
+
+        functionLoad() {
+            console.log("Hi,you load the button")
+        }
+
     </script>
 </body>
 </html>
