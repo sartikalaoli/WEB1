@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn JS Part 4</title>
 </head>
-<body>
+<body onload="functionOnLoad">
     <h1>Learn JS 4</h1>
     <!--onclick event-->
     <button onclick="functionClick()">Click me!</button>
@@ -20,8 +20,6 @@
     <!--onkeydown-->
     Name: <input type="text" id="name" onkeydown="functionKeyDown()">
     <!--onload-->
-    <button onload="functionLoad()">load me..</button>
-
     <script>
         function functionClick() {
             alert("Hi! You Cliked the button!");
@@ -34,7 +32,13 @@
         function functionKeyDown() {
             console.log("You pressed a key");
             document.getElementById("name").style.borderColor = "red";
+        
         }
+
+        functionOnLoad() {
+            alert("Welcome to my Website");
+        }
+
     </script>
 </body>
 </html>
