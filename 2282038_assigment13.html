@@ -6,15 +6,22 @@
   <script>
     function validateForm() {
       var fullName = document.forms["contactForm"]["full_name"].value;
+
       var email = document.forms["contactForm"]["email"].value;
+
       var username = document.forms["contactForm"]["username"].value;
+
       var password = document.forms["contactForm"]["password"].value;
+
       var gender = document.forms["contactForm"]["gender"].value;
+
       var religion = document.forms["contactForm"]["religion"].value;
+
       var address = document.forms["contactForm"]["address"].value;
+
       var hobbies = document.forms["contactForm"]["hobbies"].value;
 
-      if (fullName == "" || email == "" || username == "" || password == "" || gender == "" || religion == "" || address == "" || hobbies == "") {
+      if (fullName == "" || email == "" || username == "" || password == "" ||gender == "" || religion == "" || address == "" || hobbies == "") {
         alert("All fields must be filled out");
         return false;
       }
@@ -27,39 +34,43 @@
 
 <form name="contactForm" onsubmit="return validateForm()" method="post">
   <div class="container">
-    <label for="full_name"><b>Full Name</b></label>
+    <label for="full_name"><br>Full Name</br></label>
     <input type="text" placeholder="Enter Full Name" name="full_name">
 
-    <label for="email"><b>E-mail</b></label>
+    <label for="email"><br>E-mail</br></label>
     <input type="email" placeholder="Enter E-mail" name="email">
 
-    <label for="username"><b>Username</b></label>
+    <label for="username"><br>Username</br></label>
     <input type="text" placeholder="Enter Username" name="username">
 
-    <label for="password"><b>Password</b></label>
+    <label for="password"><br>Password</br></label>
     <input type="password" placeholder="Enter Password" name="password">
 
-    <label for="gender"><b>Gender</b></label><br>
+    <label for="gender"><br>Gender</br></label><br>
     <input type="radio" name="gender" value="male"> Male
     <input type="radio" name="gender" value="female"> Female
 
-    <label for="religion"><b>Religion</b></label>
+    <label for="religion"><br>Religion</br></label>
     <select name="religion">
       <option value="christianity">Christianity</option>
+
       <option value="islam">Islam</option>
+
       <option value="hinduism">Hinduism</option>
+
       <option value="buddhism">Buddhism</option>
     </select>
 
-    <label for="address"><b>Address</b></label>
+    <label for="address"><br>Address</br></label>
+    
     <textarea placeholder="Enter Address" name="address"></textarea>
 
-    <label for="hobbies"><b>Hobbies</b></label><br>
+    <label for="hobbies"><br>Hobbies</br></label><br>
     <input type="checkbox" name="hobbies" value="reading"> Reading
     <input type="checkbox" name="hobbies" value="traveling"> Traveling
     <input type="checkbox" name="hobbies" value="cooking"> Cooking
 
-    <button type="submit">Save</button>
+    <button type="submit"> Submit</button>
   </div>
 </form>
 
